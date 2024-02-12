@@ -18,6 +18,7 @@ class Solution(object):
         
         # BFS를 사용하여 트리의 최대 깊이를 계산
         queue = deque([(root, 1)])  # (노드, 현재 깊이)
+        print(queue)
         
         while queue:
             node, depth = queue.popleft()
